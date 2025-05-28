@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<channel>
+	<title>한국어 기초사전 개발 지원(Open API) - 사전 검색</title>
+	<link>https://krdict.korean.go.kr</link>
+	<description>한국어 기초사전 개발 지원(Open API) - 사전 검색 결과</description>
+	<lastBuildDate>20250529013620</lastBuildDate>
+	<total>2</total>
+	<start>1</start>
+	<num>10</num>
+	
+	
+	
+	<item>
+		
+		
+		<target_code>66039</target_code>
+		<word>시인</word>
+		<sup_no>1</sup_no>
+		
+		<origin>是認</origin>
+		
+		
+		<pronunciation>시ː인</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>명사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=66039</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>어떤 내용이나 사실이 맞거나 그러하다고 인정함.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>66040</target_code>
+		<word>시인하다</word>
+		<sup_no>0</sup_no>
+		
+		<origin>是認하다</origin>
+		
+		
+		<pronunciation>시ː인하다</pronunciation>
+		
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=66040</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>어떤 내용이나 사실이 맞거나 그러하다고 인정하다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	
+	
+</channel>
+
+
