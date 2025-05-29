@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 import requests
 import xml.etree.ElementTree as ET
 
+from helpers.network.safe_get import safe_get
+
 load_dotenv()
 API_KEY = os.getenv("KRDICT_API_KEY")
 
@@ -16,7 +18,7 @@ def get_hangul(hanja):
     'sort': 'dict'
   }
   
-  response = requests.get(base_url, params=params)
+  response = safe_get(base_url, params)
   if response.status_code != 200:
     print(f"Error: {response.status_code}")
     return ""
