@@ -1,0 +1,42 @@
+{
+  "是": {
+    "beginner": [],
+    "novice": [
+      [
+        [
+          "是認",
+          "시인"
+        ],
+        10
+      ]
+    ],
+    "advanced": [],
+    "avg_freq_beginner": -1,
+    "avg_freq_novice": 10,
+    "avg_freq_advanced": -1
+  },
+  "詩": {
+    "beginner": [],
+    "novice": [
+      [
+        [
+          "詩人",
+          "시인"
+        ],
+        10
+      ]
+    ],
+    "advanced": [],
+    "avg_freq_beginner": -1,
+    "avg_freq_novice": 10,
+    "avg_freq_advanced": -1
+  },
+  "以": {
+    "beginner": [],
+    "novice": [],
+    "advanced": [],
+    "avg_freq_beginner": -1,
+    "avg_freq_novice": -1,
+    "avg_freq_advanced": -1
+  }
+}

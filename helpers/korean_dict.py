@@ -29,7 +29,7 @@ def get_hangul(hanja):
   for item in root.findall('.//item'):
     origin = item.find('origin').text
     if origin == hanja: # Make sure origin of word matches the dictionary entry
-      return item.find('word').text
+      return item.find('word').text, response.content
 
 def get_word_grade(hanja):
   base_url = "https://krdict.korean.go.kr/api/search"
@@ -60,7 +60,7 @@ def get_word_grade(hanja):
       else:
         return "unknown"  # default grade
       
-def get_anki_fields(hanja):
+def get_anki_fields(hanja, is_native_korean: bool):
   base_url = "https://krdict.korean.go.kr/api/search"
 
   # Get word, grade, pronunciation, part of speech, Korean definition
@@ -87,14 +87,16 @@ def get_anki_fields(hanja):
   origin_text, word_text, grade_text, pronunciation_text, part_of_speech_text = "", "", "", "", ""
   
   for item in root.findall('.//item'):
-    origin = item.find('origin')
+    if is_native_korean is False:
+      origin = item.find('origin')
     word = item.find('word')
     grade = item.find('word_grade')
     pronunciation = item.find('pronunciation')
     part_of_speech = item.find('pos')
     
-    if origin is not None and origin.text == hanja:  # Make sure origin of word matches the dictionary entry
-      origin_text = origin.text
+    if (is_native_korean is True) or (origin is not None and origin.text == hanja):  # Make sure origin of word matches the dictionary entry
+      if is_native_korean is False:
+        origin_text = origin.text
       word_text = word.text if word is not None and word.text is not None else None
       grade_text = grade.text if grade is not None and grade.text is not None else None
       pronunciation_text = pronunciation.text if pronunciation is not None and pronunciation.text is not None else None
@@ -132,7 +134,7 @@ def get_anki_fields(hanja):
   for sense in root.findall(".//sense"):
     for sense in root.findall(".//translation"):
       trans_word = sense.find("trans_word")
-      if trans_word is not None:
+      if trans_word is not None and trans_word.text is not None:
         english_translations.append(trans_word.text.strip())
 
   return origin_text, word_text, grade_text, pronunciation_text, part_of_speech_text, korean_definitions, english_translations

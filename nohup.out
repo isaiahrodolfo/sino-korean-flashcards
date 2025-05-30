@@ -1,0 +1,3979 @@
+Starting...
+保有
+보유
+too rare
+所有
+소유
+所有者
+소유자
+所有者
+소유자
+already seen
+所有者
+소유자
+already seen
+所有-
+skipped
+有口無言
+유구무언
+too rare
+有權者
+유권자
+too rare
+有能-
+skipped
+有力
+유력
+too rare
+有利-
+skipped
+有名
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1423, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='krdict.korean.go.kr', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/main.py", line 91, in <module>
+    get_hangul_result = get_hangul(word)
+                        ^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/helpers/korean_dict.py", line 21, in get_hangul
+    response = safe_get(base_url, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/helpers/network/safe_get.py", line 9, in safe_get
+    response = requests.get(url, params=params, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='krdict.korean.go.kr', port=443): Read timed out. (read timeout=10)
+Starting...
+保有
+보유
+too rare
+所有
+소유
+所有者
+소유자
+所有者
+소유자
+already seen
+所有者
+소유자
+already seen
+所有-
+skipped
+有口無言
+유구무언
+too rare
+有權者
+유권자
+too rare
+有能-
+skipped
+有力
+유력
+too rare
+有利-
+skipped
+有名
+유명
+有名-
+skipped
+有神論
+유신론
+too rare
+有益
+유익
+too rare
+有志
+有效
+유효
+too rare
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 有 (3 / 1796)
+巨大
+거대
+too rare
+巨大-
+skipped
+寬大
+南大門
+남대문
+too rare
+南大門市場
+남대문 시장
+too rare
+大家族
+대가족
+too rare
+大綱
+대강
+大槪
+대개
+大過去
+大邱
+대구
+too rare
+大君
+大規模
+대규모
+大氣
+대기
+大企業
+대기업
+大腦
+대뇌
+too rare
+大多數
+대다수
+大團圓
+대단원
+too rare
+大團圓
+대단원
+already seen
+大都市
+대도시
+大動脈
+大略
+대략
+大量
+대량
+大陸
+대륙
+大陸棚
+大理石
+대리석
+too rare
+大望
+大望
+大門
+대문
+大便
+대변
+too rare
+大部分
+대부분
+大使
+대사
+大赦
+大使館
+대사관
+大洋
+대양
+too rare
+大逆
+대역
+too rare
+大要
+大田
+대전
+too rare
+大前提
+대전제
+too rare
+大衆
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1423, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='krdict.korean.go.kr', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/main.py", line 91, in <module>
+    get_hangul_result = get_hangul(word)
+                        ^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/helpers/korean_dict.py", line 21, in get_hangul
+    response = safe_get(base_url, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/helpers/network/safe_get.py", line 9, in safe_get
+    response = requests.get(url, params=params, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='krdict.korean.go.kr', port=443): Read timed out. (read timeout=10)
+Starting...
+巨大
+거대
+too rare
+巨大-
+skipped
+寬大
+南大門
+남대문
+too rare
+南大門市場
+남대문 시장
+too rare
+大家族
+대가족
+too rare
+大綱
+대강
+大槪
+대개
+大過去
+大邱
+대구
+too rare
+大君
+大規模
+대규모
+大氣
+대기
+大企業
+대기업
+大腦
+대뇌
+too rare
+大多數
+대다수
+大團圓
+대단원
+too rare
+大團圓
+대단원
+already seen
+大都市
+대도시
+大動脈
+大略
+대략
+大量
+대량
+大陸
+대륙
+大陸棚
+大理石
+대리석
+too rare
+大望
+大望
+大門
+대문
+大便
+대변
+too rare
+大部分
+대부분
+大使
+대사
+大赦
+大使館
+대사관
+大洋
+대양
+too rare
+大逆
+대역
+too rare
+大要
+大田
+대전
+too rare
+大前提
+대전제
+too rare
+大衆
+대중
+大衆交通
+대중교통
+大衆文化
+대중문화
+大衆的
+대중적
+大體
+대체
+大體-
+skipped
+大統領
+대통령
+大砲
+대포
+too rare
+大砲
+대포
+already seen
+大學
+대학
+大學校
+대학교
+大學敎授
+대학교수
+unknown grade
+大學生
+대학생
+大學院
+대학원
+大型
+대형
+大會
+대회
+都大體
+도대체
+莫大
+肥大
+盛大
+世宗大王
+세종  대왕
+too rare
+女大
+여대
+too rare
+女大生
+雄大
+偉大
+一大
+일대
+unknown grade
+重大
+중대
+too rare
+重大-
+skipped
+增大
+증대
+too rare
+最大
+최대
+最大限
+최대한
+最大限度
+최대한도
+too rare
+擴大
+확대
+too rare
+擴大
+확대
+already seen
+calculate avg freqs
+progress saved for hanja 大 (4 / 1796)
+內在的
+내재적
+too rare
+內在的
+내재적
+already seen
+內在
+내재
+too rare
+不在
+부재
+不在中
+부재중
+too rare
+散在
+산재
+too rare
+所在
+소재
+所在地
+소재지
+too rare
+實在
+실재
+too rare
+實在
+실재
+already seen
+潛在
+잠재
+too rare
+在學
+재학
+存在
+존재
+駐在
+주재
+too rare
+現在
+현재
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 在 (5 / 1796)
+個個人
+개개인
+個人
+개인
+個人的
+개인적
+個人
+개인
+already seen
+個人
+개인
+already seen
+個人
+개인
+already seen
+個人主義
+개인주의
+too rare
+個人主義者
+巨人
+거인
+too rare
+管理人
+관리인
+too rare
+軍人
+군인
+貴婦人
+귀부인
+too rare
+企業人
+기업인
+unknown grade
+老人
+노인
+代理人
+대리인
+too rare
+代理人
+대리인
+already seen
+代理人
+대리인
+already seen
+代理人
+대리인
+already seen
+名人
+명인
+too rare
+未亡人
+미망인
+too rare
+美人
+미인
+白人
+백인
+unknown grade
+犯人
+범인
+法人
+법인
+too rare
+本人
+본인
+夫人
+부인
+婦人
+부인
+産婦人科
+산부인과
+unknown grade
+殺人
+살인
+殺人者
+살인자
+too rare
+殺人者
+살인자
+already seen
+殺人者
+살인자
+already seen
+商人
+상인
+商人
+상인
+already seen
+西洋人
+서양인
+仙人掌
+선인장
+too rare
+成人
+성인
+聖人
+성인
+俗人
+속인
+too rare
+俗人
+속인
+already seen
+詩人
+시인
+新人
+신인
+惡人
+악인
+too rare
+愛人
+애인
+愛人
+애인
+already seen
+女人
+演藝人
+연예인
+戀人
+연인
+戀人
+연인
+already seen
+戀人
+外國人
+외국인
+類人猿
+유인원
+too rare
+類人猿
+유인원
+already seen
+恩人
+은인
+too rare
+擬人法
+異人
+人間
+인간
+人間關係
+인간관계
+人間性
+인간성
+人間的
+인간적
+人格
+인격
+人格
+인격
+already seen
+人格
+인격
+already seen
+人工
+인공
+人工知能
+人口
+인구
+人權
+인권
+too rare
+人氣
+인기
+人道
+인도
+人力
+인력
+too rare
+人類
+인류
+人類
+인류
+already seen
+人望
+人物
+인물
+人民
+人本主義
+인본주의
+too rare
+人分
+인분
+人事
+인사
+人士
+인사
+人事-
+skipped
+人事-
+skipped
+人山人海
+인산인해
+too rare
+人蔘
+인삼
+人蔘茶
+人相
+인상
+人生
+인생
+人性
+인성
+too rare
+人員
+인원
+人材
+인재
+人情
+인정
+too rare
+人情
+인정
+already seen
+人種
+인종
+人體
+인체
+人形
+인형
+一般人
+일반인
+帳本人
+障碍人
+丈人
+장인
+政治人
+정치인
+罪人
+죄인
+主人
+주인
+主人公
+주인공
+支配人
+지배인
+too rare
+支配人
+지배인
+already seen
+知識人
+지식인
+職場人
+직장인
+哲人
+철인
+too rare
+超人
+초인
+too rare
+超人的
+초인적
+too rare
+總支配人
+土人
+八方美人
+팔방미인
+too rare
+廢人
+폐인
+too rare
+現代人
+현대인
+黑人
+흑인
+unknown grade
+calculate avg freqs
+progress saved for hanja 人 (6 / 1796)
+滿了
+만료
+too rare
+完了
+완료
+too rare
+完了
+완료
+already seen
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 了 (7 / 1796)
+空中
+공중
+-中
+skipped
+途中
+도중
+途中
+도중
+already seen
+-中
+skipped
+不在中
+부재중
+already seen
+水中
+수중
+too rare
+市中
+시중
+市中
+시중
+already seen
+食中毒
+식중독
+too rare
+年中
+연중
+too rare
+熱中
+열중
+too rare
+熱中
+열중
+already seen
+熱中
+열중
+already seen
+週中
+中間
+중간
+中間子
+中間層
+중간층
+too rare
+中繼
+중계
+too rare
+中繼放送
+중계방송
+unknown grade
+中繼
+중계
+already seen
+中共
+中國
+중국
+too rare
+中國語
+중국어
+中級
+중급
+too rare
+中年
+중년
+中腦
+中斷
+중단
+中斷
+중단
+already seen
+中毒
+중독
+中毒
+중독
+already seen
+中東
+중동
+too rare
+中米
+中盤
+중반
+中部
+중부
+中傷
+중상
+too rare
+中傷
+중상
+already seen
+中傷
+중상
+already seen
+中傷
+중상
+already seen
+中傷
+중상
+already seen
+中生代
+中性
+중성
+too rare
+中性子
+中世
+중세
+中小企業
+중소기업
+中旬
+중순
+中食
+중식
+中心
+중심
+中心
+중심
+already seen
+中心地
+중심지
+中央暖房
+中央
+중앙
+中庸
+중용
+too rare
+中尉
+중위
+too rare
+中耳
+中耳
+中絶
+中絶
+中點
+中風
+중풍
+too rare
+中學校
+중학교
+中學生
+중학생
+中和
+중화
+too rare
+地中海
+지중해
+too rare
+集中
+집중
+集中的
+집중적
+-中
+skipped
+calculate avg freqs
+progress saved for hanja 中 (8 / 1796)
+到達-
+skipped
+到底-
+skipped
+到着
+도착
+殺到
+쇄도
+too rare
+殺到
+쇄도
+already seen
+殺到
+쇄도
+already seen
+殺到
+쇄도
+already seen
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 到 (9 / 1796)
+物資
+물자
+too rare
+外資
+외자
+too rare
+流動資本
+融資
+융자
+too rare
+融資金
+융자금
+too rare
+資格
+자격
+資格證
+자격증
+資力
+資料
+자료
+資料
+자료
+already seen
+資本家
+자본가
+too rare
+資産
+자산
+too rare
+資源
+자원
+再投資
+出資
+출자
+too rare
+投資
+투자
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 資 (10 / 1796)
+强要-
+skipped
+槪要
+개요
+too rare
+大要
+不必要-
+skipped
+所要-
+skipped
+所要時間
+需要
+수요
+要求
+요구
+要求
+요구
+already seen
+要求者
+요구자
+too rare
+要求
+요구
+already seen
+要求
+요구
+already seen
+要求
+요구
+already seen
+要塞
+요새
+unknown grade
+要塞
+요새
+already seen
+要素
+요소
+too rare
+要約
+요약
+too rare
+要約
+요약
+already seen
+要約
+요약
+already seen
+要員
+요원
+too rare
+要点要點
+要請
+요청
+要請
+요청
+already seen
+要請
+요청
+already seen
+要衝
+요충
+too rare
+摘要
+主要
+주요
+主要-
+skipped
+重要
+중요
+重要性
+중요성
+重要視-
+skipped
+重要-
+skipped
+必要
+필요
+必要性
+필요성
+必要-
+skipped
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 要 (11 / 1796)
+可能
+가능
+可能性
+가능성
+可能性
+가능성
+already seen
+可能性
+가능성
+already seen
+可能-
+skipped
+可能-
+skipped
+可燃物
+可燃物
+可燃性
+가연성
+too rare
+不可能-
+skipped
+不可侵
+불가침
+too rare
+不可避-
+skipped
+認可
+인가
+too rare
+裁可
+재가
+too rare
+許可
+허가
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 可 (12 / 1796)
+以內
+이내
+以來
+이래
+以上
+이상
+以熱治熱
+이열치열
+too rare
+以外
+이외
+以前
+이전
+以下
+이하
+以後
+이후
+calculate avg freqs
+progress saved for hanja 以 (13 / 1796)
+個個人
+개개인
+already seen
+個國
+개국
+個別
+개별
+個性
+개성
+個性
+개성
+already seen
+個月
+개월
+個人
+개인
+already seen
+個人的
+개인적
+already seen
+個人
+개인
+already seen
+個人
+개인
+already seen
+個人
+개인
+already seen
+個人主義
+개인주의
+already seen
+個人主義者
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 個 (14 / 1796)
+公聽會
+공청회
+too rare
+敎會
+교회
+國會
+국회
+國會
+국회
+already seen
+國會議員
+국회 의원
+too rare
+機會
+기회
+機會
+기회
+already seen
+大會
+대회
+already seen
+都會
+도회
+too rare
+同好會
+동호회
+too rare
+博覽會
+박람회
+too rare
+博覽會
+박람회
+already seen
+副會長
+부회장
+unknown grade
+分會
+社會
+사회
+社會生活
+사회생활
+司會者
+사회자
+社會的
+사회적
+社會主義
+사회주의
+社會學
+사회학
+unknown grade
+商會
+상회
+too rare
+送別會
+송별회
+too rare
+市議會
+實社會
+夜會
+야회
+too rare
+宴會
+연회
+too rare
+議會
+의회
+too rare
+議會
+의회
+already seen
+子會社
+자회사
+too rare
+再會
+재회
+too rare
+展示會
+전시회
+照會
+조회
+too rare
+集會
+집회
+too rare
+總會
+총회
+too rare
+討論會
+토론회
+unknown grade
+品評會
+품평회
+too rare
+協會
+협회
+too rare
+會見
+회견
+會見者
+會計士
+회계사
+too rare
+會館
+회관
+unknown grade
+會社
+회사
+會食
+회식
+too rare
+會員
+회원
+會員國
+회원국
+too rare
+會議
+회의
+會議
+회의
+already seen
+會議
+회의
+already seen
+會場
+회장
+unknown grade
+會長
+회장
+會衆
+회중
+too rare
+會合
+회합
+too rare
+會話
+회화
+休會
+calculate avg freqs
+progress saved for hanja 會 (15 / 1796)
+嗜好
+기호
+嗜好
+기호
+already seen
+同好會
+동호회
+already seen
+選好-
+skipped
+愛好
+애호
+too rare
+友好的
+우호적
+too rare
+好機
+호기
+too rare
+好奇心
+호기심
+好色
+호색
+too rare
+好意
+호의
+too rare
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 好 (16 / 1796)
+無爲
+무위
+too rare
+爲主
+위주
+爲-
+skipped
+行爲
+행위
+行爲
+행위
+already seen
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 爲 (17 / 1796)
+同上
+莫上莫下
+막상막하
+too rare
+賣上高
+賣上高
+賣上高
+史上
+사상
+事實上
+사실상
+上流
+상류
+上陸
+상륙
+too rare
+上陸
+상륙
+already seen
+上半期
+상반기
+上半身
+상반신
+too rare
+上席
+상석
+too rare
+上昇
+上昇
+上昇
+上昇
+上映
+상영
+too rare
+世上
+세상
+歷史上
+年上
+연상
+too rare
+零上
+屋上
+옥상
+外貌至上主義
+陸上
+以上
+이상
+already seen
+引上
+인상
+頂上
+정상
+頂上
+정상
+already seen
+祖上
+조상
+最上
+최상
+unknown grade
+向上
+향상
+向上
+향상
+already seen
+向上
+향상
+already seen
+向上
+향상
+already seen
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 上 (18 / 1796)
+近來
+근래
+來年
+내년
+未來
+미래
+本來
+본래
+元來
+由來
+유래
+too rare
+以來
+이래
+already seen
+將來
+장래
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 來 (19 / 1796)
+成就
+성취
+too rare
+就業
+취업
+就職
+취직
+就寢
+취침
+too rare
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 就 (20 / 1796)
+經濟學
+경제학
+高等學校
+고등학교
+高等學生
+고등학생
+工學
+공학
+too rare
+工學者
+공학자
+too rare
+科學
+과학
+科學者
+과학자
+科學的
+과학적
+光學
+광학
+too rare
+光學
+광학
+already seen
+光化學
+男學生
+남학생
+論理學
+논리학
+too rare
+農學
+농학
+too rare
+大學
+대학
+already seen
+大學校
+대학교
+already seen
+大學敎授
+대학교수
+already seen
+大學生
+대학생
+already seen
+大學院
+대학원
+already seen
+文學
+문학
+文學的
+문학적
+物理學
+물리학
+unknown grade
+物理學者
+물리학자
+too rare
+博物學
+博學多識
+박학다식
+too rare
+發生學
+放學
+방학
+法學
+법학
+too rare
+社會學
+사회학
+already seen
+生物學
+생물학
+too rare
+生化學
+생화학
+too rare
+修學
+數學
+수학
+數學者
+수학자
+too rare
+植物學
+식물학
+too rare
+神學
+신학
+too rare
+心理學
+심리학
+too rare
+心理學者
+藥學
+약학
+too rare
+藥學
+약학
+already seen
+語學
+어학
+too rare
+女學生
+歷史學
+力學
+역학
+too rare
+熱力學
+優生學
+儒學
+유학
+留學
+留學生
+倫理學
+윤리학
+too rare
+音聲學
+醫學
+의학
+入學
+입학
+入學
+입학
+already seen
+奬學金
+奬學生
+장학생
+too rare
+在學
+재학
+already seen
+靜力學
+政治學
+정치학
+unknown grade
+中學校
+중학교
+already seen
+中學生
+중학생
+already seen
+地文學
+地政學
+進學
+진학
+too rare
+哲學
+철학
+哲學者
+철학자
+unknown grade
+哲學的
+철학적
+初等學校
+초등학교
+初等學生
+초등학생
+最終學歷
+學科
+학과
+學課
+學校
+학교
+學校生活
+학교생활
+unknown grade
+學究的
+학구적
+too rare
+學級
+학급
+unknown grade
+學期
+학기
+學期
+학기
+already seen
+學年
+학년
+學年
+학년
+already seen
+學歷
+학력
+學齡
+학령
+too rare
+學問
+학문
+too rare
+學番
+학번
+學父母
+학부모
+學費
+학비
+學生
+학생
+學生證
+학생증
+學術
+학술
+學習
+학습
+學識
+학식
+too rare
+學用品
+학용품
+學園
+學園
+學院
+학원
+學位
+학위
+學位
+학위
+already seen
+學者
+학자
+學點
+학점
+衒學
+현학
+too rare
+禾本學
+化學
+화학
+化學者
+酵素學
+休學
+휴학
+too rare
+calculate avg freqs
+progress saved for hanja 學 (21 / 1796)
+交代
+교대
+交代
+교대
+already seen
+交流
+교류
+交配
+교배
+too rare
+交易
+교역
+too rare
+交際
+교제
+too rare
+交際
+교제
+already seen
+交叉
+교차
+too rare
+交叉
+교차
+already seen
+交替
+交替
+交替
+交通
+교통
+交通
+교통
+already seen
+交通事故
+교통사고
+交響曲
+교향곡
+too rare
+交換
+교환
+交換
+교환
+already seen
+交換
+교환
+already seen
+交換
+교환
+already seen
+交換
+교환
+already seen
+大衆交通
+대중교통
+already seen
+外交
+외교
+外交官
+외교관
+再交付
+再交付
+絶交
+親交
+친교
+too rare
+calculate avg freqs
+progress saved for hanja 交 (22 / 1796)
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 也 (23 / 1796)
+濫用
+남용
+too rare
+濫用
+남용
+already seen
+濫用
+남용
+already seen
+代用
+대용
+too rare
+同化作用
+無用
+무용
+unknown grade
+反作用
+반작용
+too rare
+副作用
+부작용
+費用
+비용
+費用
+비용
+already seen
+使用
+사용
+使用者
+사용자
+生活用品
+생활용품
+所用
+소용
+所用-
+skipped
+乘用車
+승용차
+食用油
+식용유
+信用
+신용
+信用
+신용
+already seen
+信用
+신용
+already seen
+信用
+신용
+already seen
+信用
+신용
+already seen
+信用
+신용
+already seen
+信用
+신용
+already seen
+實用
+실용
+too rare
+實用的
+실용적
+too rare
+惡用
+악용
+too rare
+惡用
+악용
+already seen
+惡用
+악용
+already seen
+惡用
+악용
+already seen
+用件
+용건
+too rare
+用具
+용구
+too rare
+用途
+용도
+用-
+skipped
+用語
+용어
+用地
+應用
+응용
+too rare
+利用
+이용
+利用
+이용
+already seen
+利用
+利用-
+skipped
+利用者
+利用
+이용
+already seen
+利用-
+skipped
+引用
+인용
+too rare
+引用
+인용
+already seen
+一回用
+일회용
+一回用品
+일회용품
+自家用
+자가용
+作用
+작용
+作用
+작용
+already seen
+作用
+작용
+already seen
+作用
+작용
+already seen
+作用
+작용
+already seen
+作用
+작용
+already seen
+再活用
+재활용
+再活用品
+재활용품
+適用
+적용
+適用-
+skipped
+適用-
+skipped
+專用
+전용
+借用
+차용
+too rare
+採用
+채용
+too rare
+採用
+채용
+already seen
+採用
+채용
+already seen
+採用
+채용
+already seen
+學用品
+학용품
+already seen
+活用
+활용
+活用-
+skipped
+效用
+효용
+too rare
+效用
+효용
+already seen
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 用 (24 / 1796)
+可能
+가능
+already seen
+可能性
+가능성
+already seen
+可能性
+가능성
+already seen
+可能性
+가능성
+already seen
+可能-
+skipped
+可能-
+skipped
+官能
+관능
+too rare
+官能的
+관능적
+too rare
+官能的
+관능적
+already seen
+權能
+권능
+too rare
+技能
+기능
+unknown grade
+機能
+기능
+機能
+기능
+already seen
+能動的
+능동적
+能力
+능력
+能力
+능력
+already seen
+多能
+無能
+무능
+too rare
+無能力
+무능력
+too rare
+無能力者
+무능력자
+too rare
+本能
+본능
+too rare
+不可能-
+skipped
+有能-
+skipped
+人工知能
+才能
+재능
+低能
+智能
+知能
+지능
+效能
+효능
+too rare
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 能 (25 / 1796)
+缺如
+결여
+too rare
+如干
+여간
+如前-
+skipped
+如前-
+skipped
+何如-
+skipped
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 如 (26 / 1796)
+感想文
+감상문
+too rare
+公文
+공문
+too rare
+公文書
+공문서
+too rare
+論文
+논문
+單文
+大衆文化
+대중문화
+already seen
+文句
+문구
+文具店
+문구점
+too rare
+文段
+문단
+too rare
+文脈
+문맥
+too rare
+文盲
+문맹
+too rare
+文明
+문명
+too rare
+文法
+문법
+文書
+문서
+文書
+문서
+already seen
+文語
+문어
+too rare
+文魚
+문어
+too rare
+文藝
+문예
+too rare
+文字
+문자
+文章
+문장
+文典
+文學
+문학
+already seen
+文學的
+문학적
+already seen
+文獻
+문헌
+too rare
+文化
+문화
+文化財
+문화재
+文化的
+문화적
+本文
+본문
+too rare
+碑文
+碑文
+散文
+산문
+too rare
+象形文字
+상형 문자
+too rare
+序文
+서문
+too rare
+成文化
+案內文
+안내문
+too rare
+英文
+영문
+too rare
+例文
+예문
+too rare
+韻文
+운문
+too rare
+作文
+작문
+too rare
+傳統文化
+전통문화
+呪文
+주문
+unknown grade
+呪文
+주문
+already seen
+呪文
+주문
+already seen
+注文
+주문
+注文
+주문
+already seen
+地文學
+平敍文
+평서문
+too rare
+漢文
+한문
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 文 (27 / 1796)
+校時
+교시
+當時
+당시
+同時
+동시
+非常時
+비상시
+too rare
+所要時間
+隨時
+수시
+too rare
+隨時-
+skipped
+時刻
+시각
+時間
+시간
+時間表
+시간표
+too rare
+時計
+시계
+時期
+시기
+時機
+시기
+時代
+시대
+時代的
+시대적
+時報
+시보
+too rare
+時事
+시사
+too rare
+時世
+時速
+시속
+too rare
+時日
+시일
+時節
+시절
+時點
+시점
+日時
+일시
+too rare
+一時拂
+일시불
+too rare
+一時的
+일시적
+臨時
+臨時
+暫時
+잠시
+點心時間
+점심시간
+卽時
+즉시
+平常時
+평상시
+calculate avg freqs
+progress saved for hanja 時 (28 / 1796)
+沒落
+몰락
+too rare
+沒食子
+日沒
+일몰
+too rare
+陷沒
+함몰
+too rare
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 沒 (29 / 1796)
+社說
+사설
+說得-
+skipped
+說明
+설명
+說明-
+skipped
+說明-
+skipped
+小說
+소설
+小說家
+소설가
+演說
+연설
+傳說
+전설
+解說
+해설
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 說 (30 / 1796)
+其他
+기타
+排他的
+배타적
+too rare
+他律
+타율
+too rare
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 他 (31 / 1796)
+看破
+간파
+too rare
+看板
+간판
+看板
+간판
+already seen
+看護師
+간호사
+看護
+간호
+看護
+간호
+already seen
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 看 (32 / 1796)
+大前提
+대전제
+already seen
+前提
+전제
+too rare
+提供
+제공
+提供業體
+提供
+제공
+already seen
+提供
+제공
+already seen
+提督
+제독
+too rare
+提示
+제시
+提案
+제안
+提案
+제안
+already seen
+提案
+제안
+already seen
+提案者
+제안자
+too rare
+提議
+제의
+提議-
+skipped
+提出
+제출
+提出
+제출
+already seen
+提出者
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 提 (33 / 1796)
+南支那海
+刹那
+찰나
+too rare
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 那 (34 / 1796)
+拷問
+고문
+too rare
+拷問
+고문
+already seen
+顧問
+고문
+too rare
+拷問
+고문
+already seen
+問答
+문답
+too rare
+問題
+문제
+問題點
+문제점
+訪問者
+방문자
+too rare
+訪問者
+방문자
+already seen
+訪問
+방문
+訪問
+방문
+already seen
+訪問
+방문
+already seen
+不恥下問
+設問
+설문
+審問
+심문
+too rare
+疑問
+의문
+疑問
+의문
+already seen
+質問
+질문
+質問者
+質問
+질문
+already seen
+質問
+질문
+already seen
+質問
+질문
+already seen
+學問
+학문
+already seen
+calculate avg freqs
+progress saved for hanja 問 (35 / 1796)
+高等學生
+고등학생
+already seen
+苦生
+고생
+苦生-
+skipped
+共生
+공생
+too rare
+共生
+공생
+already seen
+落花生
+男學生
+남학생
+already seen
+年生
+년생
+大學生
+대학생
+already seen
+模範生
+모범생
+too rare
+微生物
+미생물
+too rare
+發生
+발생
+發生
+발생
+already seen
+發生學
+不殺生
+私生活
+사생활
+社會生活
+사회생활
+already seen
+生薑
+생강
+too rare
+生計
+생계
+too rare
+生計
+생계
+already seen
+生氣
+생기
+生麥酒
+생맥주
+too rare
+生命
+생명
+生物
+생물
+生物學
+생물학
+already seen
+生放送
+생방송
+生産
+생산
+生産力
+생산력
+unknown grade
+生産者
+생산자
+生産者
+생산자
+already seen
+生鮮
+생선
+生水
+생수
+too rare
+生辰
+生日
+생일
+生長
+생장
+too rare
+生存
+생존
+too rare
+生存
+생존
+already seen
+生存
+생존
+already seen
+生存者
+생존자
+too rare
+生化學
+생화학
+already seen
+生活
+생활
+生活費
+생활비
+生活水準
+생활 수준
+too rare
+生活用品
+생활용품
+already seen
+生活環境
+생활 환경
+too rare
+先生
+선생
+unknown grade
+先生
+선생
+already seen
+蘇生
+受驗生
+수험생
+食生活
+식생활
+新入生
+신입생
+女高生
+여고생
+unknown grade
+女大生
+女同生
+女學生
+優生學
+幼生
+留學生
+人生
+인생
+already seen
+日常生活
+일상생활
+一生
+일생
+奬學生
+장학생
+already seen
+再生
+재생
+再生
+재생
+already seen
+再生
+재생
+already seen
+再生産
+재생산
+too rare
+卒業生
+졸업생
+中生代
+中學生
+중학생
+already seen
+初等學生
+초등학생
+already seen
+出生
+출생
+too rare
+誕生
+탄생
+平生
+평생
+筆生
+學校生活
+학교생활
+already seen
+學生
+학생
+already seen
+學生證
+학생증
+already seen
+-平生
+skipped
+calculate avg freqs
+progress saved for hanja 生 (36 / 1796)
+過去
+과거
+過多
+과다
+too rare
+過多
+과다
+already seen
+過度
+과도
+too rare
+過度
+과도
+already seen
+過渡的
+과도적
+too rare
+過勞
+과로
+too rare
+過勞
+과로
+already seen
+過食
+과식
+too rare
+過失
+과실
+too rare
+過剩
+과잉
+too rare
+過程
+과정
+大過去
+不過
+不過-
+skipped
+謝過
+사과
+謝過-
+skipped
+濾過
+여과
+too rare
+濾過器
+여과기
+too rare
+濾過器
+여과기
+already seen
+擦過傷
+찰과상
+too rare
+擦過傷
+찰과상
+already seen
+超過
+초과
+too rare
+通過
+통과
+通過-
+skipped
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 過 (37 / 1796)
+却下
+각하
+too rare
+降下
+강하
+too rare
+降下
+강하
+already seen
+急降下
+급강하
+too rare
+落下
+낙하
+too rare
+落下傘
+낙하산
+too rare
+腦下垂體
+莫上莫下
+막상막하
+already seen
+不恥下問
+臣下
+신하
+too rare
+臣下
+신하
+already seen
+零下
+胃下垂
+以下
+이하
+already seen
+引下
+인하
+低下
+저하
+too rare
+地下
+지하
+地下道
+지하도
+地下室
+지하실
+too rare
+地下鐵
+지하철
+投下
+투하
+too rare
+下降
+하강
+too rare
+下半期
+하반기
+下水
+하수
+too rare
+下水
+하수
+already seen
+下宿
+하숙
+too rare
+下旬
+하순
+下院
+하원
+too rare
+(X, <=2, X)
+calculate avg freqs
+progress saved for hanja 下 (38 / 1796)
+懇請
+간청
+too rare
+申請
+신청
+申請書
+신청서
+申請
+신청
+already seen
+要請
+요청
+already seen
+要請
+요청
+already seen
+要請
+요청
+already seen
+請求
+청구
+too rare
+請求
+청구
+already seen
+請求
+청구
+already seen
+請求
+청구
+already seen
+請願者
+請-
+skipped
+招請
+초청
+招請狀
+招請-
+skipped
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 請 (39 / 1796)
+摩天樓
+마천루
+too rare
+先天的
+선천적
+too rare
+先天的
+선천적
+already seen
+先天的
+선천적
+already seen
+信天翁
+天蓋
+天啓
+天球
+天國
+천국
+天國
+천국
+already seen
+天狼星
+天理
+천리
+too rare
+天命
+천명
+too rare
+天罰
+천벌
+too rare
+天使
+천사
+too rare
+天象儀
+天性
+천성
+too rare
+天然痘
+천연두
+too rare
+天然痘
+천연두
+already seen
+天王星
+天障
+천장
+天才
+천재
+天才
+천재
+already seen
+天災
+천재
+unknown grade
+天才
+천재
+already seen
+天頂
+天職
+천직
+too rare
+天職
+천직
+already seen
+天體
+천체
+too rare
+天秤
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 天 (40 / 1796)
+高所恐怖症
+고소 공포증
+too rare
+急所
+급소
+too rare
+便所
+변소
+too rare
+事務所
+사무소
+洗濯所
+세탁소
+所得
+소득
+所望
+소망
+unknown grade
+所聞
+소문
+所聞-
+skipped
+所屬
+소속
+所要-
+skipped
+所要時間
+所用
+소용
+already seen
+所用-
+skipped
+所願
+소원
+所願
+소원
+already seen
+所謂
+소위
+所有
+소유
+所有者
+소유자
+所有者
+소유자
+already seen
+所有者
+소유자
+already seen
+所有-
+skipped
+所在
+소재
+already seen
+所在地
+소재지
+already seen
+所重-
+skipped
+所重-
+skipped
+所持品
+소지품
+宿所
+숙소
+硏究所
+연구소
+理髮所
+이발소
+unknown grade
+場所
+장소
+整備所
+정비소
+too rare
+住所
+주소
+住所
+주소
+already seen
+託兒所
+탁아소
+too rare
+派出所
+파출소
+刑務所
+형무소
+too rare
+休憩所
+휴게소
+too rare
+calculate avg freqs
+progress saved for hanja 所 (41 / 1796)
+過多
+과다
+already seen
+過多
+과다
+already seen
+多角的
+다각적
+too rare
+多角形
+다각형
+too rare
+多孔性
+多急
+多能
+多多益善
+다다익선
+too rare
+多島海
+다도해
+too rare
+多毛作
+多辯
+多少
+다소
+多數
+다수
+多樣性
+다양성
+多樣-
+skipped
+多樣-
+skipped
+多情-
+skipped
+多幸
+다행
+多幸-
+skipped
+大多數
+대다수
+already seen
+博學多識
+박학다식
+already seen
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 多 (42 / 1796)
+小計
+소계
+too rare
+小規模
+소규모
+小腦
+소뇌
+too rare
+小都市
+소도시
+too rare
+小賣
+소매
+小便
+소변
+too rare
+小說
+소설
+already seen
+小說家
+소설가
+already seen
+小兒科
+소아과
+小宇宙
+小潮
+小銃
+소총
+too rare
+小包
+소포
+小型
+소형
+中小企業
+중소기업
+already seen
+最小
+최소
+最小限
+최소한
+縮小
+축소
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 小 (43 / 1796)
+假想
+가상
+感想文
+감상문
+already seen
+空想
+공상
+too rare
+空想
+공상
+already seen
+狂想曲
+構想
+구상
+too rare
+瞑想
+夢想
+몽상
+too rare
+夢想
+몽상
+already seen
+默想
+묵상
+too rare
+思想
+사상
+想起
+想起
+想像
+상상
+想像力
+상상력
+想像
+상상
+already seen
+想像
+상상
+already seen
+想像
+상상
+already seen
+夜想曲
+聯想-
+skipped
+豫想
+예상
+豫想
+예상
+already seen
+豫想
+예상
+already seen
+豫想
+예상
+already seen
+豫想
+예상
+already seen
+理想
+이상
+理想的
+이상적
+理想
+이상
+already seen
+理想主義
+이상주의
+too rare
+理想化
+이상화
+too rare
+回想
+회상
+too rare
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 想 (44 / 1796)
+納得-
+skipped
+得意
+득의
+too rare
+得點
+득점
+too rare
+得點
+득점
+already seen
+說得-
+skipped
+所得
+소득
+already seen
+取得
+취득
+too rare
+獲得
+획득
+too rare
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 得 (45 / 1796)
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 之 (46 / 1796)
+歸還
+귀환
+too rare
+歸還
+귀환
+already seen
+歸還者
+返還
+반환
+too rare
+返還
+반환
+already seen
+返還
+반환
+already seen
+償還
+상환
+too rare
+償還
+상환
+already seen
+召還
+還甲
+환갑
+還流
+還付
+還拂
+환불
+too rare
+(<=2, <=2, <=2)
+calculate avg freqs
+progress saved for hanja 還 (47 / 1796)
+乾電池
+건전지
+too rare
+繼電氣
+公衆電話
+공중전화
+發電
+발전
+心電計
+陽電氣
+陽電子
+陰電子
+電球
+전구
+電極
+전극
+too rare
+電氣
+전기
+電燈
+전등
+too rare
+電力
+전력
+too rare
+電流
+전류
+too rare
+電離
+電報
+전보
+too rare
+電子
+전자
+電池
+電車
+전차
+too rare
+電鐵
+전철
+電荷
+電解
+電話
+전화
+電話機
+전화기
+電話番號
+전화번호
+電話-
+skipped
+靜電氣
+蓄電池
+打電
+(X, <=2, X)
+calculate avg freqs
+progress saved for hanja 電 (48 / 1796)
+家出
+가출
+too rare
+救出
+구출
+too rare
+救出
+구출
+already seen
+露出
+노출
+too rare
+露出症
+노출증
+too rare
+貸出
+대출
+突出
+돌출
+too rare
+突出
+돌출
+already seen
+賣出
+매출
+too rare
+放出
+방출
+too rare
+放出
+방출
+already seen
+排出
+배출
+too rare
+排出
+배출
+already seen
+噴出
+분출
+too rare
+噴出
+분출
+already seen
+射出
+産出
+산출
+too rare
+産出
+산출
+already seen
+輸出
+수출
+輸出
+수출
+already seen
+演出
+연출
+演出
+연출
+already seen
+演出-
+skipped
+外出
+외출
+外出-
+skipped
+日出
+일출
+too rare
+再出發
+재출발
+too rare
+提出
+제출
+already seen
+提出
+제출
+already seen
+提出者
+支出
+지출
+支出
+지출
+already seen
+進出
+진출
+進出-
+skipped
+抽出
+추출
+too rare
+出口
+출구
+出口
+출구
+already seen
+出口
+출구
+already seen
+出國
+출국
+出勤
+출근
+出勤-
+skipped
+出頭
+출두
+too rare
+出發
+출발
+出發點
+출발점
+unknown grade
+出帆
+출범
+too rare
+出費
+出産
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: _ssl.c:983: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='krdict.korean.go.kr', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/main.py", line 91, in <module>
+    get_hangul_result = get_hangul(word)
+                        ^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/helpers/korean_dict.py", line 21, in get_hangul
+    response = safe_get(base_url, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/helpers/network/safe_get.py", line 9, in safe_get
+    response = requests.get(url, params=params, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='krdict.korean.go.kr', port=443): Read timed out. (read timeout=10)
+Starting...
+家出
+가출
+too rare
+救出
+구출
+too rare
+救出
+구출
+already seen
+露出
+노출
+too rare
+露出症
+노출증
+too rare
+貸出
+대출
+突出
+돌출
+too rare
+突出
+돌출
+already seen
+賣出
+매출
+too rare
+放出
+방출
+too rare
+放出
+방출
+already seen
+排出
+배출
+too rare
+排出
+배출
+already seen
+噴出
+분출
+too rare
+噴出
+분출
+already seen
+射出
+産出
+산출
+too rare
+産出
+산출
+already seen
+輸出
+수출
+輸出
+수출
+already seen
+演出
+연출
+演出
+연출
+already seen
+演出-
+skipped
+外出
+외출
+外出-
+skipped
+日出
+일출
+too rare
+再出發
+재출발
+too rare
+提出
+제출
+提出
+제출
+already seen
+提出者
+Request failed (attempt 1/5): ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+支出
+지출
+支出
+지출
+already seen
+進出
+진출
+進出-
+skipped
+抽出
+추출
+too rare
+出口
+출구
+出口
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1423, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='krdict.korean.go.kr', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/main.py", line 91, in <module>
+    get_hangul_result = get_hangul(word)
+                        ^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/helpers/korean_dict.py", line 21, in get_hangul
+    response = safe_get(base_url, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/helpers/network/safe_get.py", line 9, in safe_get
+    response = requests.get(url, params=params, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/isaiahrodolfo_1/Downloads/coding-projects/korean-anki/venv/lib/python3.12/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='krdict.korean.go.kr', port=443): Read timed out. (read timeout=10)
+Starting...
+家出
+가출
+too rare
+救出
+구출
+too rare
+救出
+구출
+already seen
+露出
+노출
+too rare
+露出症
+노출증
+too rare
+貸出
+대출
+突出
+돌출
+too rare
+突出
+돌출
+already seen
+賣出
+매출
+too rare
+放出
+방출
+too rare
+放出
+방출
+already seen
+排出
+배출
+too rare
+排出
+배출
+already seen
+噴出
+분출
+too rare
+噴出
+분출
+already seen
+射出
+産出
+산출
+too rare
+産出
+산출
+already seen
+輸出
+수출
+輸出
+수출
+already seen
+演出
+연출
+演出
+연출
+already seen
+演出-
+skipped
+外出
+외출
+外出-
+skipped
+日出
+일출
+too rare
+再出發
+재출발
+too rare
+提出
+제출
+提出
+제출
+already seen
+提出者
+支出
+지출
+支出
+지출
+already seen
+進出
+진출
+進出-
+skipped
+抽出
+추출
+too rare
+出口
+출구
+出口
+출구
+already seen
+出口
+출구
+already seen
+出國
+출국
+出勤
+출근
+出勤-
+skipped
+出頭
+출두
+too rare
+出發
+출발
+出發點
+출발점
+unknown grade
+出帆
+출범
+too rare
+出費
+出産
+출산
+出生
+출생
+too rare
+出席
+출석
+too rare
+出席
+출석
+already seen
+出身
+출신
+出演
+출연
+出演-
+skipped
+出入
+출입
+出入國
+출입국
+出入門
+출입문
+unknown grade
+出資
+출자
+too rare
+出張
+출장
+出處
+출처
+too rare
+出退勤
+출퇴근
+出版
+출판
+出版社
+출판사
+出版
+출판
+already seen
+出品者
+出品
+출품
+too rare
+出荷
+출하
+too rare
+出現
+출현
+too rare
+出現
+출현
+already seen
+脫出
+탈출
+too rare
+脫出-
+skipped
+派出所
+파출소
+calculate avg freqs
+progress saved for hanja 出 (49 / 1796)
+加工
+가공
+too rare
+工具
+공구
+too rare
+工夫
+공부
+工夫-
+skipped
+工事
+공사
+工業
+공업
+工業團地
+공업 단지
+too rare
+工場
+공장
+工場
+공장
+already seen
+工學
+공학
+too rare
+工學者
+공학자
+too rare
+陶工
+도공
+too rare
+名工
+石工
+석공
+too rare
+石工
+석공
+already seen
+細工
+세공
+too rare
+手細工
+人工
+인공
+人工知能
+竣工
+준공
+too rare
+鐵工
+철공
+too rare
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 工 (50 / 1796)
+對決
+대결
+too rare
+對答
+대답
+對答-
+skipped
+對立
+대립
+too rare
+對立
+대립
+already seen
+對立
+대립
+already seen
+對備
+대비
+對備-
+skipped
+對數
+對位法
+對應
+대응
+對照
+대조
+too rare
+對照
+대조
+already seen
+對照
+대조
+already seen
+對照
+대조
+already seen
+對策
+대책
+對處
+대처
+too rare
+對蹠的
+對-
+skipped
+對抗
+대항
+too rare
+對話
+대화
+對話
+대화
+already seen
+對話者
+對話
+대화
+already seen
+反對
+반대
+反對
+반대
+already seen
+反對
+반대
+already seen
+反對
+반대
+already seen
+反對者
+反對者
+反對者
+反對便
+반대편
+unknown grade
+非對稱
+비대칭
+too rare
+相對
+상대
+相對方
+상대방
+相對性
+상대성
+unknown grade
+相對的
+상대적
+相對便
+상대편
+敵對
+적대
+too rare
+敵對
+적대
+already seen
+敵對
+적대
+already seen
+絶對
+絶對-
+skipped
+絶對的
+正反對
+정반대
+calculate avg freqs
+progress saved for hanja 對 (51 / 1796)
+大都市
+대도시
+都大體
+도대체
+都市
+도시
+都心
+도심
+都會
+도회
+too rare
+小都市
+소도시
+too rare
+首都
+수도
+首都圈
+수도권
+(<=2, X, X)
+calculate avg freqs
+progress saved for hanja 都 (52 / 1796)
+乾燥機
+耕耘機
+경운기
+too rare
+契機
+계기
+too rare
+計算機
+機械
+기계
+機關
+기관
+機關車
+기관차
+too rare
+機關車
+기관차
+already seen
+機關銃
