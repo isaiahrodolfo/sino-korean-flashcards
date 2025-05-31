@@ -30,13 +30,5 @@
     "avg_freq_beginner": -1,
     "avg_freq_novice": 10,
     "avg_freq_advanced": -1
-  },
-  "以": {
-    "beginner": [],
-    "novice": [],
-    "advanced": [],
-    "avg_freq_beginner": -1,
-    "avg_freq_novice": -1,
-    "avg_freq_advanced": -1
   }
 }
