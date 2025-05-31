@@ -4,15 +4,22 @@
     "novice": [
       [
         [
+          "亦是",
+          "역시"
+        ],
+        10
+      ],
+      [
+        [
           "是認",
           "시인"
         ],
-        10
+        0
       ]
     ],
     "advanced": [],
     "avg_freq_beginner": -1,
-    "avg_freq_novice": 10,
+    "avg_freq_novice": 5,
     "avg_freq_advanced": -1
   },
   "詩": {
@@ -23,12 +30,42 @@
           "詩人",
           "시인"
         ],
-        10
+        0
       ]
     ],
     "advanced": [],
     "avg_freq_beginner": -1,
-    "avg_freq_novice": 10,
+    "avg_freq_novice": 0,
+    "avg_freq_advanced": -1
+  },
+  "以": {
+    "beginner": [],
+    "novice": [
+      [
+        [
+          "以上",
+          "이상"
+        ],
+        4
+      ],
+      [
+        [
+          "以內",
+          "이내"
+        ],
+        6
+      ],
+      [
+        [
+          "以來",
+          "이래"
+        ],
+        8
+      ]
+    ],
+    "advanced": [],
+    "avg_freq_beginner": -1,
+    "avg_freq_novice": 6,
     "avg_freq_advanced": -1
   }
 }

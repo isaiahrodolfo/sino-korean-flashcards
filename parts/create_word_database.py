@@ -15,7 +15,7 @@ from statistics import mean
 from datastructures.hanja_words import HanjaWords
 
 word_attributes = [['beginner', 'avg_freq_beginner'], ['novice', 'avg_freq_novice'], ['advanced', 'avg_freq_advanced']]
-word_groups_by_avg_freq: list[tuple[list[tuple[str, str]], float, str]]
+word_groups_by_avg_freq: list[tuple[list[tuple[str, str]], str, float]]
   
 def load_previous_progress():
   # Try to load previous progress

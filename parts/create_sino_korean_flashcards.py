@@ -8,7 +8,7 @@ from helpers.dedup import dedup
 from datastructures.word_entry import WordEntry
 
 ## PART 3: Sino-Korean into flashcards format
-def create_sino_korean_flashcards(seen_words, word_groups_by_avg_freq, freq_dict):
+def create_sino_korean_flashcards(freq_dict, word_groups_by_avg_freq):
   # Try to load previous progress
   if os.path.exists("pickle-output/final_sino_korean_dict.pkl"):
     with open("pickle-output/final_sino_korean_dict.pkl", "rb") as f:
@@ -16,7 +16,7 @@ def create_sino_korean_flashcards(seen_words, word_groups_by_avg_freq, freq_dict
   else:
     final_sino_korean_dict: dict[str, WordEntry] = {}
     
-  LEN_SEEN_WORDS = len(seen_words)
+  LEN_SEEN_WORD_GROUPS = len(word_groups_by_avg_freq)
 
   # Add each word to Anki list (Sino-Korean word list)
   for index_word, list_of_words in enumerate(word_groups_by_avg_freq):
@@ -45,7 +45,7 @@ def create_sino_korean_flashcards(seen_words, word_groups_by_avg_freq, freq_dict
       }
 
       current_index = index_word + 1
-      print(hanja_word + " (" + str(current_index) + " / " + str(LEN_SEEN_WORDS) + ")")
+      print(hanja_word + " (Group " + str(current_index) + " / " + str(LEN_SEEN_WORD_GROUPS) + ")")  ## TESTING
       # ? Add Traditional, Simplified Chinese and Korean versions of hanja, no matter if they differ (but add a "different hanja?" field)
 
       final_sino_korean_dict[hanja_word] = word_entry
@@ -54,7 +54,7 @@ def create_sino_korean_flashcards(seen_words, word_groups_by_avg_freq, freq_dict
         pickle.dump(final_sino_korean_dict, f)
 
   # Convert final_sino_korean_dict to csv
-  with open("final_sino_korean_dict.csv", "w", newline="", encoding="utf-8-sig") as csvfile:
+  with open("flashcards-output/final_sino_korean_dict.csv", "w", newline="", encoding="utf-8-sig") as csvfile:
     fieldnames = ["word", "hanja", "pronunciation", "english_translations", "korean_definitions", "part_of_speech", "frequency"]
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
@@ -65,7 +65,7 @@ def create_sino_korean_flashcards(seen_words, word_groups_by_avg_freq, freq_dict
         "hanja": entry["hanja"],
         "pronunciation": entry["pronunciation"],
         "english_translations": "; ".join(entry["english_translations"]),
-        "korean_definitions": "; ".join(entry["korean_definitions"]),
+        "korean_definitions": " ".join(entry["korean_definitions"]),
         "part_of_speech": entry["part_of_speech"],
         "frequency": entry["frequency"],
       })

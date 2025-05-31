@@ -21,16 +21,16 @@ def create_native_korean_flashcards(freq_dict, seen_frequencies):
   all_freqs = set(range(len(freq_dict)))
   print(all_freqs)
   # Take the difference of the sets
-  unseen = all_freqs - seen_frequencies
-  print(unseen)
+  unseen_freqs_set  = all_freqs - seen_frequencies
+  print(unseen_freqs_set)
   # Convert back to sorted list
-  unseen_list = sorted(unseen)
-  print(unseen_list)
+  unseen_freqs = sorted(unseen_freqs_set)
+  print(unseen_freqs)
 
-  LEN_UNSEEN_FREQUENCIES = len(unseen_list)
+  LEN_UNSEEN_FREQUENCIES = len(unseen_freqs)
 
   # Add each word to Anki list (Sino-Korean word list)
-  for index, frequency in enumerate(unseen_list):
+  for index, frequency in enumerate(unseen_freqs):
     # Skip if already processed
     word = freq_dict[frequency]
     if word in final_native_korean_dict:
@@ -49,7 +49,7 @@ def create_native_korean_flashcards(freq_dict, seen_frequencies):
       "frequency": frequency
     }
 
-    print(word_entry)
+    print(word, dedup(english_translations))
 
     current_index = index + 1
     print(word + " (" + str(current_index) + " / " + str(LEN_UNSEEN_FREQUENCIES) + ")")
@@ -60,7 +60,7 @@ def create_native_korean_flashcards(freq_dict, seen_frequencies):
         pickle.dump(final_native_korean_dict, f)
 
   # Convert final_native_korean_dict to csv
-  with open("final_native_korean_dict.csv", "w", newline="", encoding="utf-8-sig") as csvfile:
+  with open("flashcards-output/final_native_korean_dict.csv", "w", newline="", encoding="utf-8-sig") as csvfile:
     fieldnames = ["word", "hanja", "pronunciation", "english_translations", "korean_definitions", "part_of_speech", "frequency"]
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
@@ -71,7 +71,9 @@ def create_native_korean_flashcards(freq_dict, seen_frequencies):
         "hanja": entry["hanja"],
         "pronunciation": entry["pronunciation"],
         "english_translations": "; ".join(entry["english_translations"]),
-        "korean_definitions": "; ".join(entry["korean_definitions"]),
+        "korean_definitions": " ".join(entry["korean_definitions"]),
         "part_of_speech": entry["part_of_speech"],
         "frequency": entry["frequency"],
       })
+
+  return unseen_freqs
