@@ -1,7 +1,11 @@
 ﻿word,hanja,pronunciation,english_translations,korean_definitions,part_of_speech,frequency
 시인,詩人,시인,poet,전문적으로 시를 짓는 사람.,명사,0
-역시,亦是,역씨,also; as well; as one expected; as expected; as always; after all,어떤 것과 마찬가지로. 생각했던 대로. 이전과 마찬가지로. 아무리 생각해도.,부사,10
 시인,是認,시ː인,admission; acknowledgement; admit; acknowledge,어떤 내용이나 사실이 맞거나 그러하다고 인정함. 어떤 내용이나 사실이 맞거나 그러하다고 인정하다.,명사,0
-이상,以上,이ː상,or more; and over; now that; since; the end,수량이나 정도가 일정한 기준을 포함하여 그보다 많거나 나은 것. 순서나 위치가 일정한 기준보다 앞이거나 위인 것. 이미 그렇게 된 바에는. 서류나 강연 등에 마지막에 써서 ‘끝’의 뜻을 나타내는 말.,명사,4
-이내,以內,이ː내,within; less than; not more than,일정한 범위의 안.,명사,6
-이래,以來,이ː래,since,과거의 어느 일정한 때부터 지금까지. 또는 그 뒤.,의존 명사,8
+역시,亦是,역씨,also; as well; as one expected; as expected; as always; after all,어떤 것과 마찬가지로. 생각했던 대로. 이전과 마찬가지로. 아무리 생각해도.,부사,4
+이상,以上,이ː상,or more; and over; now that; since; the end,수량이나 정도가 일정한 기준을 포함하여 그보다 많거나 나은 것. 순서나 위치가 일정한 기준보다 앞이거나 위인 것. 이미 그렇게 된 바에는. 서류나 강연 등에 마지막에 써서 ‘끝’의 뜻을 나타내는 말.,명사,2
+이래,以來,이ː래,since,과거의 어느 일정한 때부터 지금까지. 또는 그 뒤.,의존 명사,3
+이외,以外,이ː외/이ː웨,the others; being other than,어떤 범위의 밖.,명사,5
+이전,以前,이ː전,previous time; before; before; last time; the other day,지금보다 앞. 기준이 되는 때를 포함하여 그 앞. 말하고 있는 때 이전의 지나간 차례나 때.,명사,6
+이하,以下,이ː하,and below; and less; below,수량이나 정도가 일정한 기준을 포함하여 그보다 적거나 모자란 것. 순서나 위치가 일정한 기준보다 뒤거나 아래인 것.,명사,7
+이후,以後,이ː후,later time; the future; since,지금부터 뒤. 기준이 되는 때를 포함하여 그 뒤.,명사,8
+이내,以內,이ː내,within; less than; not more than,일정한 범위의 안.,명사,12

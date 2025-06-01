@@ -192,4 +192,6 @@ def create_word_database(hanjas, freq_dict):
   # (Save progress after sorting all words)
   save_progress(hanja_dict, word_groups_by_avg_freq, seen_words, seen_frequencies)
 
+  print(hanja_dict, word_groups_by_avg_freq, seen_words, seen_frequencies)
+
   return hanja_dict, word_groups_by_avg_freq, seen_words, seen_frequencies

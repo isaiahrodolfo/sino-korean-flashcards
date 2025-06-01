@@ -5,8 +5,8 @@
 	<title>한국어 기초사전 개발 지원(Open API) - 사전 검색</title>
 	<link>https://krdict.korean.go.kr</link>
 	<description>한국어 기초사전 개발 지원(Open API) - 사전 검색 결과</description>
-	<lastBuildDate>20250531175032</lastBuildDate>
-	<total>12</total>
+	<lastBuildDate>20250602085755</lastBuildDate>
+	<total>10</total>
 	<start>1</start>
 	<num>10</num>
 	
@@ -15,243 +15,25 @@
 	<item>
 		
 		
-		<target_code>17182</target_code>
-		<word>우리</word>
+		<target_code>71135</target_code>
+		<word>이래</word>
 		<sup_no>2</sup_no>
 		
+		<origin>以來</origin>
 		
-		<pronunciation>우리</pronunciation>
 		
-		
-		<word_grade>초급</word_grade>
-		
-		<pos>대명사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=17182</link>
-		
-		
-		<sense>
-			<sense_order>1</sense_order>
-			<definition>말하는 사람이 자기와 듣는 사람 또는 이를 포함한 여러 사람들을 가리키는 말.</definition>
-			
-		</sense>
-		
-		<sense>
-			<sense_order>2</sense_order>
-			<definition>말하는 사람이 자기보다 높지 않은 사람에게 자기를 포함한 여러 사람들을 가리키는 말.</definition>
-			
-		</sense>
-		
-		<sense>
-			<sense_order>3</sense_order>
-			<definition>말하는 사람이 자기보다 높지 않은 사람에게 자기와 관련된 것을 친근하게 나타낼 때 쓰는 말.</definition>
-			
-		</sense>
-		
-		
-		
-
-		
-
-		
-
-		
-
-		
-	</item>
-	
-	<item>
-		
-		
-		<target_code>70398</target_code>
-		<word>우리</word>
-		<sup_no>1</sup_no>
-		
-		
-		<pronunciation>우리</pronunciation>
-		
-		
-		<pos>명사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=70398</link>
-		
-		
-		<sense>
-			<sense_order>1</sense_order>
-			<definition>짐승을 가두어 기르는 곳.</definition>
-			
-		</sense>
-		
-		
-		
-
-		
-
-		
-
-		
-
-		
-	</item>
-	
-	<item>
-		
-		
-		<target_code>70403</target_code>
-		<word>우리나라</word>
-		<sup_no>0</sup_no>
-		
-		
-		<pronunciation>우리나라</pronunciation>
-		
-		
-		<word_grade>초급</word_grade>
-		
-		<pos>명사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=70403</link>
-		
-		
-		<sense>
-			<sense_order>1</sense_order>
-			<definition>한국 사람이 한국을 스스로 이르는 말.</definition>
-			
-		</sense>
-		
-		
-		
-
-		
-
-		
-
-		
-
-		
-	</item>
-	
-	<item>
-		
-		
-		<target_code>70399</target_code>
-		<word>우리글</word>
-		<sup_no>0</sup_no>
-		
-		
-		<pronunciation>우리글</pronunciation>
-		
-		
-		<pos>명사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=70399</link>
-		
-		
-		<sense>
-			<sense_order>1</sense_order>
-			<definition>한국 사람들이 사용하는 글자인 한글.</definition>
-			
-		</sense>
-		
-		
-		
-
-		
-
-		
-
-		
-
-		
-	</item>
-	
-	<item>
-		
-		
-		<target_code>70411</target_code>
-		<word>우리다</word>
-		<sup_no>0</sup_no>
-		
-		
-		<pronunciation>우리다</pronunciation>
-		
-		
-		<pos>동사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=70411</link>
-		
-		
-		<sense>
-			<sense_order>1</sense_order>
-			<definition>어떤 물체를 액체에 담가 그 물체의 맛이나 빛깔 등이 액체 속으로 빠져나오게 하다.</definition>
-			
-		</sense>
-		
-		<sense>
-			<sense_order>2</sense_order>
-			<definition>남을 속이거나 위협하여 돈이나 물품 등을 빼앗다.</definition>
-			
-		</sense>
-		
-		
-		
-
-		
-
-		
-
-		
-
-		
-	</item>
-	
-	<item>
-		
-		
-		<target_code>70413</target_code>
-		<word>우리말</word>
-		<sup_no>0</sup_no>
-		
-		
-		<pronunciation>우리말</pronunciation>
-		
-		
-		<pos>명사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=70413</link>
-		
-		
-		<sense>
-			<sense_order>1</sense_order>
-			<definition>한국 사람들이 사용하는 한국말.</definition>
-			
-		</sense>
-		
-		
-		
-
-		
-
-		
-
-		
-
-		
-	</item>
-	
-	<item>
-		
-		
-		<target_code>59339</target_code>
-		<word>봉우리</word>
-		<sup_no>1</sup_no>
-		
-		
-		<pronunciation>봉우리</pronunciation>
+		<pronunciation>이ː래</pronunciation>
 		
 		
 		<word_grade>고급</word_grade>
 		
-		<pos>명사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=59339</link>
+		<pos>의존 명사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=71135</link>
 		
 		
 		<sense>
 			<sense_order>1</sense_order>
-			<definition>산에서 가장 높이 솟은 부분.</definition>
+			<definition>과거의 어느 일정한 때부터 지금까지. 또는 그 뒤.</definition>
 			
 		</sense>
 		
@@ -270,58 +52,25 @@
 	<item>
 		
 		
-		<target_code>38253</target_code>
-		<word>꽃봉우리</word>
-		<sup_no>0</sup_no>
+		<target_code>72094</target_code>
+		<word>이래</word>
+		<sup_no>1</sup_no>
 		
 		
 		
-		<pos>명사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=38253</link>
-		
-		
-		<sense>
-			<sense_order>1</sense_order>
-			<definition>→ 꽃봉오리</definition>
-			
-		</sense>
-		
-		
-		
-
-		
-
-		
-
-		
-
-		
-	</item>
-	
-	<item>
-		
-		
-		<target_code>48183</target_code>
-		<word>돼지우리</word>
-		<sup_no>0</sup_no>
-		
-		
-		<pronunciation>돼ː지우리</pronunciation>
-		
-		
-		<pos>명사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=48183</link>
+		<pos>품사 없음</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=72094</link>
 		
 		
 		<sense>
 			<sense_order>1</sense_order>
-			<definition>돼지를 가두어 기르는 곳.</definition>
+			<definition>‘이리하여’가 줄어든 말.</definition>
 			
 		</sense>
 		
 		<sense>
 			<sense_order>2</sense_order>
-			<definition>(비유적으로) 아주 더러운 곳.</definition>
+			<definition>‘이러하여’가 줄어든 말.</definition>
 			
 		</sense>
 		
@@ -340,27 +89,266 @@
 	<item>
 		
 		
-		<target_code>50906</target_code>
-		<word>둥우리</word>
-		<sup_no>0</sup_no>
+		<target_code>80066</target_code>
+		<word>이래-</word>
+		<sup_no>1</sup_no>
 		
 		
-		<pronunciation>둥우리</pronunciation>
 		
-		
-		<pos>명사</pos>
-		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=50906</link>
+		<pos>품사 없음</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=80066</link>
 		
 		
 		<sense>
 			<sense_order>1</sense_order>
-			<definition>나뭇가지나 짚 등을 엮어 만든 닭의 집.</definition>
+			<definition>(이래, 이래서, 이랬다, 이래라)→ 이러다</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>93160</target_code>
+		<word>이래-</word>
+		<sup_no>2</sup_no>
+		
+		
+		
+		<pos>품사 없음</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=93160</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>(이래, 이래서, 이랬다)→ 이렇다</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>71158</target_code>
+		<word>이래서</word>
+		<sup_no>0</sup_no>
+		
+		
+		
+		<word_grade>중급</word_grade>
+		
+		<pos>품사 없음</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=71158</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>'이리하여서'가 줄어든 말.</definition>
 			
 		</sense>
 		
 		<sense>
 			<sense_order>2</sense_order>
-			<definition>새가 알을 낳거나 살기 위해 풀, 나뭇가지 등을 엮어 만든 둥근 모양의 집.</definition>
+			<definition>'이러하여서'가 줄어든 말.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>72095</target_code>
+		<word>이래도</word>
+		<sup_no>0</sup_no>
+		
+		
+		
+		<pos>품사 없음</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=72095</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>‘이리하여도’가 줄어든 말.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>‘이러하여도’가 줄어든 말.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>72096</target_code>
+		<word>이래라저래라</word>
+		<sup_no>0</sup_no>
+		
+		
+		
+		<pos>품사 없음</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=72096</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>‘이리하여라 저리하여라’가 줄어든 말.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>72098</target_code>
+		<word>이래저래</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>이래저래</pronunciation>
+		
+		
+		<pos>부사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=72098</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>이렇게 저렇게. 또는 이런저런 이유로.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>71157</target_code>
+		<word>이렇다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>이러타</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>형용사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=71157</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>상태, 모양, 성질 등이 이와 같다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>24838</target_code>
+		<word>이러다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>이러다</pronunciation>
+		
+		
+		<word_grade>중급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=24838</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>이렇게 하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>이렇게 말하다.</definition>
 			
 		</sense>
 		

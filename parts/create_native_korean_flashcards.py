@@ -4,6 +4,7 @@ import csv
 
 from helpers.korean_dict import get_anki_fields
 from helpers.dedup import dedup
+from helpers.get_unseen_frequencies import get_unseen_frequencies
 
 from datastructures.word_entry import WordEntry
 
@@ -17,15 +18,7 @@ def create_native_korean_flashcards(freq_dict, seen_frequencies):
   else:
     final_native_korean_dict: dict[str, WordEntry] = {}
 
-  # Get all frequencies
-  all_freqs = set(range(len(freq_dict)))
-  print(all_freqs)
-  # Take the difference of the sets
-  unseen_freqs_set  = all_freqs - seen_frequencies
-  print(unseen_freqs_set)
-  # Convert back to sorted list
-  unseen_freqs = sorted(unseen_freqs_set)
-  print(unseen_freqs)
+  unseen_freqs = get_unseen_frequencies(freq_dict, seen_frequencies)
 
   LEN_UNSEEN_FREQUENCIES = len(unseen_freqs)
 
@@ -76,4 +69,6 @@ def create_native_korean_flashcards(freq_dict, seen_frequencies):
         "frequency": entry["frequency"],
       })
 
-  return unseen_freqs
+  with open("pickle-output/unseen_freqs.pkl", "wb") as f:
+    pickle.dump(unseen_freqs, f)
+  print("save unseen freqs")
