@@ -18,7 +18,15 @@ def create_native_korean_flashcards(freq_dict, seen_frequencies):
   else:
     final_native_korean_dict: dict[str, WordEntry] = {}
 
-  unseen_freqs = get_unseen_frequencies(freq_dict, seen_frequencies)
+  # Load or compute unseen frequencies
+  if os.path.exists("pickle-output/unseen_freqs.pkl"):
+    with open("pickle-output/unseen_freqs.pkl", "rb") as f:
+      unseen_freqs: list[int] = pickle.load(f)
+  else:
+    unseen_freqs = get_unseen_frequencies(freq_dict, seen_frequencies)
+    with open("pickle-output/unseen_freqs.pkl", "wb") as f:
+      pickle.dump(unseen_freqs, f)
+  print(unseen_freqs)
 
   LEN_UNSEEN_FREQUENCIES = len(unseen_freqs)
 

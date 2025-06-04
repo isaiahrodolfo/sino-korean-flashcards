@@ -1,12 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 
+from helpers.network.safe_get import safe_get
+
 # Gets a list of words that include the given hanja using the website: koreanhanja.app
 def get_words(hanja):
 
   # Fetch and parse the webpage
   url = "https://koreanhanja.app/" + hanja
-  response = requests.get(url)
+  response = safe_get(url)
   soup = BeautifulSoup(response.text, "html.parser")
 
   # Extract the Chinese characters (first <td> in each row)

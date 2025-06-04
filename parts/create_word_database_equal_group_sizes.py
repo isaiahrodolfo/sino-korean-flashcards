@@ -63,11 +63,16 @@ def save_progress(seen_hanja_index, word_groups_by_avg_freq, seen_words, seen_fr
 ## PART 1: Create database of hanja groups -> words
 def create_word_database(hanjas, freq_dict):
   seen_hanja_index, word_groups_by_avg_freq, seen_words, seen_frequencies = load_previous_progress()
-  seen_words, seen_frequencies = set(), set()
+
+  # Output current progress out for checking
+  with open("output/word-database-progress.json", "w", encoding='utf-8') as f:
+    json.dump(word_groups_by_avg_freq, f, ensure_ascii=False)
 
   seen_hanja_index = int(seen_hanja_index)
 
   print("seen_hanja_index = " + str(seen_hanja_index))
+  # print("seen_frequencies = " + str(seen_frequencies))
+  print("seen_frequencies (count) = " + str(len(seen_frequencies)))
 
   LEN_HANJAS = len(hanjas)
 
@@ -76,7 +81,7 @@ def create_word_database(hanjas, freq_dict):
   for index_hanja, hanja in enumerate(hanjas):
     # Skip if already processed
     if index_hanja <= seen_hanja_index:
-      print(f"Skipping already-processed {hanja}")
+      print(f"{hanja} +")
       continue
 
     # Process each word corresponding to the current hanja
@@ -88,7 +93,7 @@ def create_word_database(hanjas, freq_dict):
       print(word)
 
       if "-" in word: # ignore words with a dash (these are prefixes or suffixes)
-        print("skipped")
+        print("skip")
         continue
 
       get_hangul_result = get_hangul(word)
@@ -101,16 +106,17 @@ def create_word_database(hanjas, freq_dict):
 
       # Ignore words not in 5800 list or seen words list (or already assigned to a different hanja)
       if word in seen_words:
-        print("already seen")
+        print("seen")
         continue
       if hangul not in freq_dict:
-        print("too rare")
+        print("rare")
         seen_words.add(word)
         continue
 
       freq = freq_dict.index(hangul)
       if freq == None:
         print("no freq error")
+        return
        
       w_freq = freq_dict.index(hangul)
       words_freq_sorted.append((word, hangul, w_freq))
@@ -118,8 +124,18 @@ def create_word_database(hanjas, freq_dict):
       seen_words.add(word)
       seen_frequencies.add(freq)
 
+      # Save seen frequencies
+      with open("pickle-output/seen_frequencies.pkl", "wb") as f:
+        pickle.dump(seen_frequencies, f)
+
+      # Output seen words and frequencies to double check
+      with open("output/seen_words.json", "w", encoding='utf-8') as f:
+        json.dump(list(seen_words), f, ensure_ascii=False)
+      with open("output/seen_frequencies.json", "w", encoding='utf-8') as f:
+        json.dump(list(seen_frequencies), f, ensure_ascii=False)
+
     words_freq_sorted.sort(key=lambda x: x[2])
-    print("frequency sorted " + str(words_freq_sorted))
+    # print("frequency sorted " + str(words_freq_sorted))
 
     word_group = []  # list[tuple(hanja, hangul)]
     
@@ -137,13 +153,17 @@ def create_word_database(hanjas, freq_dict):
         print("index_word = " + str(index_word) + ", dump " + str(word_group))
         avg_freq = mean([freq for _, _, freq in word_group]) 
         word_groups_by_avg_freq.append((word_group, hanja, avg_freq))
-        print(word_groups_by_avg_freq)
+        # print(word_groups_by_avg_freq)  ## TESTING
         word_group = []  # Reset when dumped
       
     # Save progress for this hanja
     save_progress(index_hanja, word_groups_by_avg_freq, seen_words, seen_frequencies)
 
     print("progress saved for hanja " + hanja + " " + "(" + str(index_hanja + 1) + " / " + str(LEN_HANJAS) + ")")
+
+    # Print current progress out for checking
+    with open("output/word-database-progress.json", "w", encoding='utf-8') as f:
+      json.dump(word_groups_by_avg_freq, f, ensure_ascii=False)
 
   # Sort groups of words by frequency 
   word_groups_by_avg_freq.sort(key=lambda x: x[2])
