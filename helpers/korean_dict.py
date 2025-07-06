@@ -101,6 +101,7 @@ def get_anki_fields(hanja, is_native_korean: bool):
       grade_text = grade.text if grade is not None and grade.text is not None else None
       pronunciation_text = pronunciation.text if pronunciation is not None and pronunciation.text is not None else None
       part_of_speech_text = part_of_speech.text if part_of_speech is not None and part_of_speech.text is not None else None
+      break  # Stop after first match
       
   for sense in root.findall(".//sense"):
     definition = sense.find("definition")

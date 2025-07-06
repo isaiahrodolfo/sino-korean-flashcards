@@ -13,7 +13,7 @@ def create_lists():
 
   # Read in the frequency dictionary
   with open("data/korean-frequency-5000.txt", "r") as file:
-  # with open("data/small-data/korean-frequency-few.txt", "r") as file: 
+  # with open("data/small-data/korean-frequency-few.txt", "r") as file:  ## TESTING
     freq_dict = file.read().split('\n')
 
   return hanjas, freq_dict

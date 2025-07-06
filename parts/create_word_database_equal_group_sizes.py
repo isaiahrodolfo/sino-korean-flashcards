@@ -15,6 +15,7 @@ from statistics import mean
 from datastructures.hanja_words import HanjaWords
 
 GROUP_SIZE = 3
+HANJA_FREQUENCY_DISPLACEMENT = -500  # Show hanja much earlier by artificially lowering its frequency rankings
 
 word_attributes = [['beginner', 'avg_freq_beginner'], ['novice', 'avg_freq_novice'], ['advanced', 'avg_freq_advanced']]
 word_groups_by_avg_freq: list[tuple[list[tuple[str, str]], str, float]]
@@ -152,7 +153,7 @@ def create_word_database(hanjas, freq_dict):
         # Calculate average frequency
         print("index_word = " + str(index_word) + ", dump " + str(word_group))
         avg_freq = mean([freq for _, _, freq in word_group]) 
-        word_groups_by_avg_freq.append((word_group, hanja, avg_freq))
+        word_groups_by_avg_freq.append((word_group, hanja, avg_freq + HANJA_FREQUENCY_DISPLACEMENT))  # Show hanja much earlier by artificially lowering its frequency rankings
         # print(word_groups_by_avg_freq)  ## TESTING
         word_group = []  # Reset when dumped
       

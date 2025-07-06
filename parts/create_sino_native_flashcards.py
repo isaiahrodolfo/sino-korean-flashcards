@@ -8,12 +8,19 @@ from helpers.get_unseen_frequencies import get_unseen_frequencies
 
 from datastructures.word_entry import WordEntry
 
+def save_progress(u_index, w_index):
+  with open("pickle-output/sino_native_indexes.pkl", "wb") as f:
+    pickle.dump((u_index, w_index), f)
+  with open("pickle-output/final_sino_native_dict.pkl", "wb") as f:
+    pickle.dump(final_sino_native_list, f)
+
+seen = set()
+
 if os.path.exists("pickle-output/final_sino_native_dict.pkl"):
   with open("pickle-output/final_sino_native_dict.pkl", "rb") as f:
     entries: list[WordEntry] = pickle.load(f)
 
     # dedup
-    seen = set()
     final_sino_native_list = []
     for entry in entries:
         key = (entry["word"], entry["hanja"])
@@ -47,7 +54,7 @@ def create_sino_native_flashcards(freq_dict, word_groups_by_avg_freq, seen_frequ
       pickle.dump(unseen_freqs, f)
   print(unseen_freqs)
 
-  if os.path.exists("pickle-output/w_word_index.pkl"):
+  if os.path.exists("pickle-output/w_word_index.pkl"):  ## DELETE THIS IF YOU WANT TO START AT PART 4
     with open("pickle-output/w_word_index.pkl", "rb") as f:
       w_word_index: int = pickle.load(f)
   else:
@@ -85,7 +92,8 @@ def create_sino_native_flashcards(freq_dict, word_groups_by_avg_freq, seen_frequ
       print("native word next")
       is_native_word = True
       hangul = freq_dict[unseen_freqs[u_index]]
-      add_word_to_final_list(hangul, "", is_native_word, freq_dict, None)
+      add_word_to_final_list(hangul, "", is_native_word, freq_dict, seen)
+      save_progress(u_index, w_index)
       u_index += 1
       print(hangul + " (Group " + str(u_index + w_index - 1) + " / " + str(num_total_groups) + ")")
     else:
@@ -96,7 +104,8 @@ def create_sino_native_flashcards(freq_dict, word_groups_by_avg_freq, seen_frequ
         print("hanja_hangul_word: " + str(word_groups_by_avg_freq[w_index][0][w_word_index]))
         hanja = hanja_hangul_word[0]
         hangul = hanja_hangul_word[1]
-        add_word_to_final_list(hangul, hanja, is_native_word, freq_dict, w_word_index)
+        add_word_to_final_list(hangul, hanja, is_native_word, freq_dict, seen)
+        save_progress(u_index, w_index)
         print(hangul + " (Group " + str(max(u_index + w_index - 1, 0)) + " / " + str(num_total_groups) + ")")
         w_word_index += 1
       w_index += 1
@@ -114,7 +123,10 @@ def create_sino_native_flashcards(freq_dict, word_groups_by_avg_freq, seen_frequ
   
   write_to_csv(final_sino_native_list)
 
-def add_word_to_final_list(hangul, hanja, is_native_word, freq_dict, w_word_index):
+def add_word_to_final_list(hangul, hanja, is_native_word, freq_dict, seen):
+
+  if (hangul, hanja) in seen:
+    return  # skip duplicates
 
   if is_native_word:
     word_to_look_up = hangul
@@ -122,6 +134,10 @@ def add_word_to_final_list(hangul, hanja, is_native_word, freq_dict, w_word_inde
     word_to_look_up = hanja
 
   _, _, _, pronunciation, part_of_speech, korean_definitions, english_translations = get_anki_fields(word_to_look_up, is_native_word)
+
+  # Do not add pronunciation rules if same as word
+  if pronunciation == hangul:
+    pronunciation = ""
 
   word_entry = {
     "word": hangul,
@@ -136,14 +152,6 @@ def add_word_to_final_list(hangul, hanja, is_native_word, freq_dict, w_word_inde
   print(hangul, hanja, dedup(english_translations))
 
   final_sino_native_list.append(word_entry)
-
-  with open("pickle-output/final_sino_native_dict.pkl", "wb") as f:
-    pickle.dump(final_sino_native_list, f)
-
-  # Save current location of hanja group
-  if w_word_index:
-    with open("pickle-output/w_word_index.pkl", "wb") as f:
-      pickle.dump(w_word_index, f)
 
 def write_to_csv(final_sino_native_list):
     # Convert final_sino_native_list to csv

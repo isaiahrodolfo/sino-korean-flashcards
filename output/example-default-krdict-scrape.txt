@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<channel>
+	<title>한국어 기초사전 개발 지원(Open API) - 사전 검색</title>
+	<link>https://krdict.korean.go.kr</link>
+	<description>한국어 기초사전 개발 지원(Open API) - 사전 검색 결과</description>
+	<lastBuildDate>20250605154059</lastBuildDate>
+	<total>19</total>
+	<start>1</start>
+	<num>10</num>
+	
+	
+	
+	<item>
+		
+		
+		<target_code>62091</target_code>
+		<word>보이다</word>
+		<sup_no>1</sup_no>
+		
+		
+		<pronunciation>보이다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62091</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>눈으로 대상의 존재나 겉모습을 알게 되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>대상을 살펴 내용이나 상태를 알게 되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>어떤 결과가 나오게 되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>무엇이 어떠하다고 생각되거나 판단되다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>59531</target_code>
+		<word>보이다</word>
+		<sup_no>2</sup_no>
+		
+		
+		<pronunciation>보이다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=59531</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>눈으로 대상의 존재나 겉모습을 알게 하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>눈으로 대상을 즐기거나 감상하게 하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>대상의 내용이나 상태를 알기 위하여 살피게 하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>어떤 일을 당하거나 겪거나 얻어 가지게 하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>5</sense_order>
+			<definition>일정한 목적을 가지고 물건을 보게 하거나 사람을 만나게 하다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>40653</target_code>
+		<word>내보이다</word>
+		<sup_no>2</sup_no>
+		
+		
+		<pronunciation>내보이다</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=40653</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>안이나 속에 넣어 두었던 것을 꺼내서 보게 하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>속마음을 밖으로 드러내다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>48609</target_code>
+		<word>돋보이다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>돋뽀이다</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=48609</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>실제보다 더 좋게 보이다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>훌륭하거나 뛰어나 여럿 중에서 도드라져 보이다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>49634</target_code>
+		<word>들여다보이다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>드려다보이다</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=49634</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>속이나 안에 있는 것이 밖에서 보이다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>62935</target_code>
+		<word>선보이다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>선ː보이다</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62935</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>물건이나 사람 등이 처음 모습을 드러내다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>21917</target_code>
+		<word>건너다보이다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>건ː너다보이다</pronunciation>
+		
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=21917</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>건너편에 있는 것이 바라다 보이다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>36174</target_code>
+		<word>굽어보이다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>구버보이다</pronunciation>
+		
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=36174</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>높은 위치에서 내려다 보이다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>41699</target_code>
+		<word>내다보이다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>내ː다보이다</pronunciation>
+		
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=41699</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>안에서 밖이 보이다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>먼 데가 보이다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>신체의 일부나 속마음 등이 겉으로 드러나 보이다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>앞으로 일어날 일이 미리 헤아려지다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>41870</target_code>
+		<word>내려다보이다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>내려다보이다</pronunciation>
+		
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=41870</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>위에서 아래쪽에 있는 것이 보이다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>남이 자기보다 낮추어 보이다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	
+	
+</channel>
+
+
